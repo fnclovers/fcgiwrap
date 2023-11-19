@@ -36,6 +36,8 @@ requirements
 
 ``fcgiwrap`` also uses (but not requires) ``systemd`` for socket activation.
 
+apt install libfcgi-dev
+
 procedure
 ---------
 To install::
