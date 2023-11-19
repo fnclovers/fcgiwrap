@@ -263,6 +263,7 @@ out_of_loop:
 		close(*fdp);
 		*fdp = -1;
 	}
+	FCGI_fflush(ffp);
 
 	return NULL;
 }
