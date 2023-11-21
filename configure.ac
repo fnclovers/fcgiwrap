@@ -3,7 +3,7 @@
 
 AC_PREREQ(2.61)
 AC_INIT([fcgiwrap], [1.1.0], [root@localdomain.pl])
-AM_CFLAGS="-std=gnu99 -Wall -Wextra -Werror -pedantic"
+AM_CFLAGS="-std=gnu99 -pedantic"
 if test x"$CFLAGS" = x""; then
     AM_CFLAGS="$AM_CFLAGS -O2 -g3"
 else

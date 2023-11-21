@@ -263,7 +263,9 @@ out_of_loop:
 		close(*fdp);
 		*fdp = -1;
 	}
-	FCGI_fflush(ffp);
+	if (FCGI_fflush(ffp) == EOF) {
+		return "writing CGI reply";
+	}
 
 	return NULL;
 }
